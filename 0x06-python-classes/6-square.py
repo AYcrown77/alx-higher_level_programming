@@ -2,6 +2,7 @@
 
 """My Square module"""
 
+
 class Square:
     """define a square"""
 
@@ -77,15 +78,16 @@ class Square:
         if self.size == 0:
             return "\n"
         for w in range(self.position[1]):
-                pos += "\n"
+            pos += "\n"
         for w in range(self.size):
-            for l in range(self.position[0]):
+            for x in range(self.position[0]):
                 pos += " "
-            for l in range(self.size):
+            for x in range(self.size):
                 pos += "#"
             pos += "\n"
         return pos
+
     def my_print(self):
+
         """print the square in position"""
         print(self.pos_print(), end='')
-
