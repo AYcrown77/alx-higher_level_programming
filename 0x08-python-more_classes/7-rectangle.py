@@ -68,7 +68,7 @@ class Rectangle:
         if not self.width or not self.height:
             return 0
         return (self.width + self.height) * 2
-    
+
     def __str__(self):
         """return the string rep of rectangle"""
         rect_str = ""
@@ -89,8 +89,7 @@ class Rectangle:
 
     def __repr__(self):
         """return a formal representation of rectangles"""
-        return "Rectangle(" + str(self.__width) + ", "+ str(self.__height) + ")"
-
+        return "Rectangle(" + str(self.width) + ", " + str(self.height) + ")"
 
     def __del__(self):
         """display when deleting a rectangle"""

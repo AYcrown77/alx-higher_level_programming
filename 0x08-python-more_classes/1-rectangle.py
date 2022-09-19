@@ -37,7 +37,7 @@ class Rectangle:
         self.___width = value
 
     @property
-    def height(self)
+    def height(self):
         """the property of height as another side of rectangle"""
         return self.__height
 

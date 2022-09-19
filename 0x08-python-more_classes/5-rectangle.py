@@ -86,8 +86,7 @@ class Rectangle:
 
     def __repr__(self):
         """return a formal representation of rectangles"""
-        return "Rectangle(" + str(self.__width) + ", "+ str(self.__height) + ")"
-
+        return "Rectangle(" + str(self.width) + ", " + str(self.height) + ")"
 
     def __del__(self):
         """display when deleting a rectangle"""
