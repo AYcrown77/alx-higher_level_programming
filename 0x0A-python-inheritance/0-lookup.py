@@ -1,4 +1,4 @@
-#!/usr/bin/phython3
+#!/usr/bin/python3
 
 """defines an object attribute lookup function"""
 
