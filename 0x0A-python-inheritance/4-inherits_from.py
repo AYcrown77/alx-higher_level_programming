@@ -1,4 +1,4 @@
-#!/usr/bin//python3
+#!/usr/bin/python3
 """module of inherits_from - no test cases needed"""
 
 
