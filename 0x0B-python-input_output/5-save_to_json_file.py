@@ -1,4 +1,4 @@
-#!/usr/bin/usr
+#!/usr/bin/python3
 """my save_to_json_file module"""
 import json
 
