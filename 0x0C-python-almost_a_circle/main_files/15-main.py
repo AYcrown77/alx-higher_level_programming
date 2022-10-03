@@ -10,6 +10,3 @@ if __name__ == "__main__":
 
     with open("Rectangle.json", "r") as file:
         print(file.read())
-
-guillaume@ubuntu:~/$ ./15-main.py
-[{"y": 8, "x": 2, "id": 1, "width": 10, "height": 7}, {"y": 0, "x": 0, "id": 2, "width": 2, "height": 4}]

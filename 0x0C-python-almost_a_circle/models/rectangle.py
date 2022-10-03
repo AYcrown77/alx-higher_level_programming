@@ -74,7 +74,7 @@ class Rectangle(Base):
 
     def display(self):
         """dispay the rectangle using #"""
-        if self.y__y > 0:
+        if self.__y > 0:
             print('\n' * self.__y, end='')
 
         for i in range(self.height):
@@ -85,8 +85,8 @@ class Rectangle(Base):
 
     def __str__(self):
         """str info about a rectangle"""
-        return "[{}] ({}) {}/{} - {}/{}".format
-    (type(self).__name__, self.id, self.x, self.y, self.width, self.height)
+        return "[Rectangle] ({}) {}/{} - {}/{}".\
+            format(self.id, self.x, self.y, self.width, self.height)
 
     def update(self, *args, **kwargs):
         """assigns an argument to each attribute"""
@@ -99,7 +99,7 @@ class Rectangle(Base):
 
         if argc > 0:
             for i in range(argc):
-                setattr(self, modi_attrs[i], args[i])
+                setattr(self, modif_attrs[i], args[i])
         elif kwargc > 0:
             for k, v in kwargs.items():
                 if k in modif_attrs:

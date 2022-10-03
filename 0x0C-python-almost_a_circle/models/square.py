@@ -12,8 +12,8 @@ class Square(Rectangle):
 
     def __str__(self):
         """str info about a square"""
-        return "[{}] ({}) {}/{} - {}".format
-    (type(self).__name__, self.id, self.x, self.y, self.width)
+        return "[{}] ({}) {}/{} - {}".\
+            format(type(self).__name__, self.id, self.x, self.y, self.width)
 
     @property
     def size(self):
@@ -37,7 +37,7 @@ class Square(Rectangle):
 
         if argc > 0:
             for i in range(argc):
-                setattr(self. modif_attrs[i], args[i])
+                setattr(self, modif_attrs[i], args[i])
         elif kwargc > 0:
             for k, v in kwargs.items():
                 if k in modif_attrs:
